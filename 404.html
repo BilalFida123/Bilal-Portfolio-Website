@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Page Not Found | Muhammad Bilal Fida</title>
+<meta name="robots" content="noindex, follow"/>
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png"/>
+<script>
+  (function () {
+    var saved = localStorage.getItem('bf-theme');
+    var theme = (saved === 'light' || saved === 'dark') ? saved :
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+<link href="assets/css/main.css" rel="stylesheet"/>
+<style>
+  .nf-wrap { min-height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 20px; }
+  .nf-code { font-family: var(--font-heading); font-size: clamp(64px, 14vw, 140px); font-weight: 700; color: var(--c-accent); line-height: 1; }
+  .nf-title { font-family: var(--font-heading); font-size: clamp(20px, 3vw, 28px); font-weight: 600; color: var(--c-ink); margin-top: 8px; }
+  .nf-desc { color: var(--c-text); max-width: 420px; margin: 14px 0 28px; }
+</style>
+</head>
+<body>
+<div class="nf-wrap">
+  <div class="nf-code">404</div>
+  <div class="nf-title">This page doesn't exist</div>
+  <p class="nf-desc">The page you're looking for may have been moved or removed. Let's get you back on track.</p>
+  <a href="/" class="btn btn-primary">Back to Home</a>
+</div>
+</body>
+</html>
